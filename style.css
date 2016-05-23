@@ -1,0 +1,57 @@
+.center {
+  margin: auto;
+  /* center's div's/block level elements */
+}
+.center-children {
+  text-align: center;
+  /* center's btn's/inline elements */
+}
+.location {
+  height: 3.6em;
+  width: 10.5em;
+  background-color: #FFF;
+  color: #FFF;
+  text-align: center;
+}
+.description {
+  height: 3.6em;
+  width: 10.5em;
+  background-color: #FFF;
+  color: #FFF;
+  margin-top: 1em;
+  text-align: center;
+}
+.temperature {
+  height: 3.6em;
+  width: 10.5em;
+  background-color: #FFF;
+  color: #FFF;
+  margin-top: 1em;
+  text-align: center;
+}
+.icons {
+ text-align: center;
+}
+.buttons {
+  margin-top: 2em;
+  background-color: #FFF;
+}
+h1 {
+  color: #FFF;
+}
+p {
+  color: #000;
+}
+footer p {
+  color: #FFF;
+  font-size: 1.25em;
+}
+body {
+  background-image: url("https://pixabay.com/static/uploads/photo/2013/10/02/23/03/dawn-190055_960_720.jpg");
+  background-repeat: no-repeat;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover; 
+ font-family: 'Oswald', sans-serif;
+}
