@@ -30,7 +30,7 @@
   text-align: center;
 }
 .icons {
- text-align: center;
+  text-align: center;
 }
 .buttons {
   margin-top: 2em;
@@ -49,9 +49,10 @@ footer p {
 body {
   background-image: url("https://pixabay.com/static/uploads/photo/2013/10/02/23/03/dawn-190055_960_720.jpg");
   background-repeat: no-repeat;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover; 
- font-family: 'Oswald', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-attachment: fixed;
+  font-family: 'Oswald', sans-serif;
 }
