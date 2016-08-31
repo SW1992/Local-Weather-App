@@ -1,5 +1,5 @@
 /* Works in Edge & Firefox, 
-not yet fixed for Chrome */
+not supported in Chrome */
 $(document).ready(function() {
   init();
 });
@@ -22,11 +22,8 @@ function showUserPosition(position) {
   url += custom;
   /* give us our custom url, for api call */
   $.ajax({
-
-    type: 'GET',
-
+   type: 'GET',
     url: url,
-
     error: function(xhr, status, error) {
       if (status === "timeout") {
         alert(xhr.status + ": " + error);
@@ -40,7 +37,6 @@ function showUserPosition(position) {
         alert(xhr.status + ": " + error)
       }
     },
-
     success: function(data, status, xhr) {
       var city = data.name;
       var country = data.sys.country;
@@ -88,48 +84,39 @@ function convert(celsius) {
 function changeBackground(weather) {
   var imgUrl = "";
   if (weather === "Thunderstorm") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2015/11/14/22/43/flash-1043778_960_720.jpg"
-
+    imgUrl = "http://s1172.photobucket.com/user/SW1992/media/Local%20Weather%20App/flash-1043778_960_720_zps8gf4twfc.jpg.html"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Drizzle") {
-    imgUrl =  "https://pixabay.com/static/uploads/photo/2015/08/03/22/25/rain-874041_960_720.jpg"
-
+    imgUrl =  "http://s1172.photobucket.com/user/SW1992/media/Local%20Weather%20App/drizzle-874041_960_720_zpslwfkjxkg.jpg.html"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Rain") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2015/07/02/10/45/raindrops-828954_960_720.jpg"
-
+    imgUrl = "http://i1172.photobucket.com/albums/r576/SW1992/Local%20Weather%20App/raindrops-828954_1280_zpsqqeakfxp.jpg"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Snow") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2012/03/01/01/34/winter-20234_960_720.jpg"
-
+    imgUrl = "http://i1172.photobucket.com/albums/r576/SW1992/Local%20Weather%20App/winter-20234_960_720_zpsequtx5ab.jpg"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Atmosphere") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2016/01/19/15/20/forest-1149222_960_720.jpg"
-
+    imgUrl = "http://s1172.photobucket.com/user/SW1992/media/Local%20Weather%20App/atmospheric-1149222_960_720_zps1qq9wcjg.jpg.html"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Clear") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2012/03/04/00/01/background-21717_960_720.jpg"
-
+    imgUrl = "http://i1172.photobucket.com/albums/r576/SW1992/Local%20Weather%20App/clear-21717_960_720_zpst9uhyckt.jpg"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Clouds") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2016/03/04/22/02/clouds-1236768_960_720.jpg"
-
+    imgUrl = "http://i1172.photobucket.com/albums/r576/SW1992/Local%20Weather%20App/clouds-1236768_960_720_zpskisratxu.jpg"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else if (weather === "Extreme") {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2013/02/25/16/00/key-west-86025_960_720.jpg"
-
+    imgUrl = "http://i1172.photobucket.com/albums/r576/SW1992/Local%20Weather%20App/extreme-86025_960_720_zpsydwlkjr0.jpg"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   } else {
-    imgUrl = "https://pixabay.com/static/uploads/photo/2016/02/11/23/01/clouds-1194915_960_720.jpg"
-
+    imgUrl = "http://i1172.photobucket.com/albums/r576/SW1992/Local%20Weather%20App/sky-1194915_960_720_zpscbibcli7.jpg"
     $(".description").html("<p>" + weather + "</p>")
     $("body").css('background-image', 'url(' + imgUrl + ')')
   }
@@ -215,7 +202,7 @@ function icons(id) {
     case 904:
     case 905:
     case 906:
-$(".icons").attr("src", "http://openweathermap.org/img/w/11d.png")
+     $(".icons").attr("src", "http://openweathermap.org/img/w/11d.png")
       break;
     case 950:
     case 951:
@@ -230,7 +217,7 @@ $(".icons").attr("src", "http://openweathermap.org/img/w/11d.png")
     case 960:
     case 961:
     case 962:
-         $(".icons").attr("src", "http://openweathermap.org/img/w/50d.png");
+      $(".icons").attr("src", "http://openweathermap.org/img/w/50d.png");
       break;
     default:
       $(".icons").attr("src", "http://openweathermap.org/img/w/03d.png")
