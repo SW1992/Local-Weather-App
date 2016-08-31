@@ -4,10 +4,8 @@ Built With HTML, CSS, Bootstrap, jQuery & Javascript.
 
 Uses the HTML 5 Geolocation API & the Open Weather API to get a users position & give them weather data based on that.
 
-It works in Edge & Firefox, but i've yet to find a work around for Chrome.
+It works in Edge & Firefox. 
 
-Currently, Chrome is blocking the HTML 5 Geolocation API from getting the users location. 
-
-I will update this as i find a solution.
+It uses the HTML 5 Geolocation API for getting the users location, which isn't supported in chrome.
 
 This is a Free Code Camp Zipline Project. https://www.freecodecamp.com/challenges/show-the-local-weather 
